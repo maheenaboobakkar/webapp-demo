@@ -7,7 +7,5 @@
     "test": "echo \"No real tests yet\" && exit 0",
     "start": "node app.js"
   },
-  "dependencies": {
-    "http": "^0.0.1"
-  }
+  "dependencies": {}
 }
