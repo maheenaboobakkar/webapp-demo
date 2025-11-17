@@ -1,8 +1,10 @@
-pipeline {
-    agent any
 
-    tools {
-        nodejs 'nodejs16'  // This must match the name you set earlier
+pipeline {
+    agent {
+        docker {
+            image 'node:18'
+            args '-p 3000:3000'
+        }
     }
 
     stages {
